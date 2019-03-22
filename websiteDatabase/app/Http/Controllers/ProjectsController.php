@@ -33,25 +33,39 @@ class ProjectsController extends Controller
         return redirect('/projects');
     }
 
-    public function show()
+    public function show($id)
     {
+        $project = Project::findsOrFail($id);
 
+        dd($project->title);
+      
+        return view('projects.show', compact('project'));
     }
 
     public function edit($id)
     {
-        $project = project::find($id);
+        $project = project::findOrFail($id);
 
         return view('projects.edit', compact('project'));
     }
 
-    public function update()
+    public function update($id)
     {
+        $project = project::findOrFail($id);
+
+        $project->title = request('title');
+        $project->description = request('description');
+
+        $project->save();
+
+        return redirect('/projects');
 
     }
 
-    public function destroy()
+    public function destroy($id)
     {
+        project::findOrFail($id)->delete();
 
+        return redirect('/projects');
     }
 }
