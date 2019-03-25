@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-// use Illuminate\Http\Request;
+use Illuminate\Http\Request;
 
 use App\Project;
 
@@ -23,49 +23,38 @@ class ProjectsController extends Controller
 
     public function store()
     {
-        $project = new Project();
+        $attributes = request()->validate([
+            'title' => ['required', 'min:3'],
+            'description' => ['required', 'min:3']
+        ]);
 
-        $project->title = request('title');
-        $project->description = request('description');
-
-        $project->save();
+        Project::create($attributes);
 
         return redirect('/projects');
     }
 
-    public function show($id)
-    {
-        $project = Project::findsOrFail($id);
-
-        dd($project->title);
-      
+    public function show(Project $project)
+    {      
         return view('projects.show', compact('project'));
     }
 
-    public function edit($id)
+    public function edit(Project $project)
     {
-        $project = project::findOrFail($id);
-
         return view('projects.edit', compact('project'));
     }
 
-    public function update($id)
+    public function update(Project $project)
     {
-        $project = project::findOrFail($id);
-
-        $project->title = request('title');
-        $project->description = request('description');
-
-        $project->save();
+        $project->update(request(['title','description']));
 
         return redirect('/projects');
 
     }
 
-    public function destroy($id)
+    public function destroy(Project $project)
     {
-        project::findOrFail($id)->delete();
-
+        $project->delete();
+        
         return redirect('/projects');
     }
 }
