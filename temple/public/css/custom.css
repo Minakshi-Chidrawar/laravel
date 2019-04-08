@@ -1,5 +1,8 @@
   /* Make the image fully responsive */
-  .carousel-img {
-    height: 400px;
-    width: 100%;
+.carousel-img {
+    height: 500px;
+}
+
+.w3-tangerine {
+  font-family: 'Tangerine', serif;
 }
