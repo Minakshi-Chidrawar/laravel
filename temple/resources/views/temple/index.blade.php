@@ -1,38 +1,28 @@
 @extends('master.layout')
 
 @section('content')
-<div id="demo" class="carousel slide" data-ride="carousel">
-
-  <!-- Indicators -->
-  <ul class="carousel-indicators">
-    <li data-target="#demo" data-slide-to="0" class="active"></li>
-    <li data-target="#demo" data-slide-to="1"></li>
-    <li data-target="#demo" data-slide-to="2"></li>
-    <li data-target="#demo" data-slide-to="3"></li>
-  </ul>
-  
-  <!-- The slideshow -->
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
-    <div class="carousel-item carousel-img active">
-      <img src="{{ asset('images/Mataji.png') }}" alt="Los Angeles">
+    <div class="carousel-item active">
+      <img class="d-block w-100 carousel-img" src="{{ asset('images/Mataji.png') }}" alt="First slide">
     </div>
-    <div class="carousel-item carousel-img">
-      <img src="{{ asset('images/Mataji1.png') }}" alt="Chicago">
+    <div class="carousel-item">
+      <img class="d-block w-100 carousel-img" src="{{ asset('images/Mataji1.png') }}" alt="Second slide">
     </div>
-    <div class="carousel-item carousel-img">
-      <img src="{{ asset('images/Mataji2.png') }}" alt="New York">
+    <div class="carousel-item">
+      <img class="d-block w-100 carousel-img" src="{{ asset('images/Mataji2.png') }}" alt="Third slide">
     </div>
-    <div class="carousel-item carousel-img">
-      <img src="{{ asset('images/Mataji3.png') }}" alt="New York">
-    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100 carousel-img" src="{{ asset('images/Mataji3.png') }}" alt="Third slide">
+    </div>    
   </div>
-  
-  <!-- Left and right controls -->
-  <a class="carousel-control-prev" href="#demo" data-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
   </a>
-  <a class="carousel-control-next" href="#demo" data-slide="next">
-    <span class="carousel-control-next-icon"></span>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
   </a>
 </div>
 @endsection
