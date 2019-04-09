@@ -17,7 +17,7 @@
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Mataji Temple</a>
+        <a class="navbar-brand" href="#">Shree Adhya Shakti Mataji Temple</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -53,7 +53,7 @@
 
     <div class="container">
         <div class="w3-tangerine">
-            <p class="w3-large">Shree Adhya Shakti Mataji Temple</p> 
+            <p class="w3-large"></p> 
         </div>
         @yield('content')
     </div>
