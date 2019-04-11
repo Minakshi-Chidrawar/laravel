@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Shree Adhya Shakti Mataji Temple</title>
+    <title>Shree Adhya Shakti Mataji</title>
     <!-- link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{ asset('css/half-slider.css') }}" -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -17,7 +17,7 @@
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Shree Adhya Shakti Mataji Temple</a>
+        <a class="navbar-brand" href="#">Shree Adhya Shakti Mataji</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -44,9 +44,6 @@
                 <li class="nav-item">
                     <a class="nav-link" href="donation.html">Donations</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact us</a>
-                </li>
             </ul>
         </div>
     </nav>
@@ -57,21 +54,8 @@
         </div>
         @yield('content')
     </div>
-
-    <div class="container">
-        <footer class="footer">
-            <small class="text-muted">
-                <address>
-                    Visit us at:<br>
-                    Adhya Shakti Mataji Temple<br>
-                    55, High Street, Cowley, Uxbridge<br>
-                    Middlesex UB8 2DZ<br>
-                    Mobile : 078 8225 3540<br>
-                </address>
-                &copy; Shree Adhya Shakti Mataji Temple. All Rights Reserved. Registered Charity No. 1089024
-            </small>
-        </footer>
-    </div>
+    <hr>
+    @include('master.footer')
 
     <!-- Bootstrap core JavaScript -->
     <script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script>

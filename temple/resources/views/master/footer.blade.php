@@ -11,10 +11,8 @@
         <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
 
           <!-- Content -->
-          <h5 class="font-weight-bold text-uppercase mb-4">Footer Content</h5>
-          <p>Here you can use rows and columns here to organize your footer content.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit amet numquam iure provident voluptate esse
-            quasi, veritatis totam voluptas nostrum.</p>
+          <h5 class="font-weight-bold text-uppercase mb-4">Timings: </h5>
+          <p>Open daily 08:00-18:30 PM<br>Aarti daily at 12:00 noon and 18:00</p>
 
         </div>
         <!-- Grid column -->
@@ -30,22 +28,22 @@
           <ul class="list-unstyled">
             <li>
               <p>
-                <a href="#!">PROJECTS</a>
+                <a href="aboutmataji.html">About Mataji</a>
               </p>
             </li>
             <li>
               <p>
-                <a href="#!">ABOUT US</a>
+                <a href="aboutTemple.html">About Temple</a>
               </p>
             </li>
             <li>
               <p>
-                <a href="#!">BLOG</a>
+                <a href="#!donation.html">Donations</a>
               </p>
             </li>
             <li>
               <p>
-                <a href="#!">AWARDS</a>
+                <a href="contact.html">Contact us</a>
               </p>
             </li>
           </ul>
@@ -59,24 +57,24 @@
         <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
 
           <!-- Contact details -->
-          <h5 class="font-weight-bold text-uppercase mb-4">Address</h5>
+          <h5 class="font-weight-bold text-uppercase mb-4">Visit us</h5>
 
           <ul class="list-unstyled">
             <li>
               <p>
-                <i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+                <i class="fas fa-home mr-3"></i> Adhya Shakti Mataji Temple</p>
             </li>
             <li>
               <p>
-                <i class="fas fa-envelope mr-3"></i> info@example.com</p>
+                <i class="fas fa-envelope mr-3"></i> 55, High Street, Cowley, Uxbridge</p>
             </li>
             <li>
               <p>
-                <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+                <i class="fas fa-envelope mr-3"></i> Middlesex UB8 2DZ</p>
             </li>
             <li>
               <p>
-                <i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+                <i class="fas fa-print mr-3"></i> 078 8225 3540</p>
             </li>
           </ul>
 
@@ -118,8 +116,8 @@
     <!-- Footer Links -->
 
     <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2018 Copyright:
-      <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+    <div class="footer-copyright text-center py-3">
+      © Shree Adhya Shakti Mataji Temple. All Rights Reserved. Registered Charity No. 1089024
     </div>
     <!-- Copyright -->
 
