@@ -1,23 +1,33 @@
   /* Make the image fully responsive */
   html, body {
-    background-color: #fff;
+    background-color: #e9b6bb;
     color: #636b6f;
-    font-family: 'Tangerine', serif;
+    font-family: 'Pacifico', cursive;
     font-weight: 200;
     height: 100vh;
     margin: 0;
 }
 
-/* @font-face {
-  https://mdbootstrap.com/docs/jquery/navigation/footer/
-  font-family: fabfeltscript-bold;
-  src: url('{{ asset('fonts/fabfeltscript-bold.tff') }}');
-} */
-
 .carousel-img {
-    height: 500px;
+    height: 350px;
 }
 
-.w3-tangerine {
-  font-family: 'Tangerine', serif;
+.carousel-inner {
+  position:relative;
+  width:50%;
+  overflow:hidden;
+}
+
+.carousel-inner::after {
+  display:block;
+  clear:both;
+  content:"";
+}
+
+.carousel-control-next {
+  right:50%;
+}
+
+.bg-dark {
+  color: #721c24;
 }
