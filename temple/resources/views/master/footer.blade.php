@@ -1,5 +1,5 @@
 <!-- Footer -->
-<footer class="page-footer font-small mdb-color lighten-3 pt-4">
+<footer class="page-footer font-small mdb-color lighten-3 pt-2">
 
     <!-- Footer Links -->
     <div class="container text-center text-md-left">
@@ -8,10 +8,10 @@
       <div class="row">
 
         <!-- Grid column -->
-        <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
+        <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-0">
 
           <!-- Content -->
-          <h5 class="font-weight-bold text-uppercase mb-4">Timings: </h5>
+          <h5 class="font-weight-bold text-uppercase mb-8">Timings: </h5>
           <p>Open daily 08:00-18:30 PM<br>Aarti daily at 12:00 noon and 18:00</p>
 
         </div>
@@ -23,28 +23,20 @@
         <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
 
           <!-- Links -->
-          <h5 class="font-weight-bold text-uppercase mb-4">About</h5>
+          <h5 class="font-weight-bold text-uppercase mb-8">About</h5>
 
           <ul class="list-unstyled">
             <li>
-              <p>
                 <a href="aboutmataji.html">About Mataji</a>
-              </p>
             </li>
             <li>
-              <p>
                 <a href="aboutTemple.html">About Temple</a>
-              </p>
             </li>
             <li>
-              <p>
                 <a href="#!donation.html">Donations</a>
-              </p>
             </li>
             <li>
-              <p>
                 <a href="contact.html">Contact us</a>
-              </p>
             </li>
           </ul>
 
@@ -57,24 +49,20 @@
         <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
 
           <!-- Contact details -->
-          <h5 class="font-weight-bold text-uppercase mb-4">Visit us</h5>
+          <h5 class="font-weight-bold text-uppercase mb-8">Visit us</h5>
 
           <ul class="list-unstyled">
             <li>
-              <p>
-                <i class="fas fa-home mr-3"></i> Adhya Shakti Mataji Temple</p>
+                <i class="fas fa-home mr-3"></i> Adhya Shakti Mataji Temple
             </li>
             <li>
-              <p>
-                <i class="fas fa-envelope mr-3"></i> 55, High Street, Cowley, Uxbridge</p>
+                <i class="fas fa-envelope mr-3"></i> 55, High Street, Cowley, Uxbridge
             </li>
             <li>
-              <p>
-                <i class="fas fa-envelope mr-3"></i> Middlesex UB8 2DZ</p>
+                <i class="fas fa-envelope mr-3"></i> Middlesex UB8 2DZ
             </li>
             <li>
-              <p>
-                <i class="fas fa-print mr-3"></i> 078 8225 3540</p>
+                <i class="fas fa-print mr-3"></i> 078 8225 3540
             </li>
           </ul>
 
@@ -116,7 +104,7 @@
     <!-- Footer Links -->
 
     <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">
+    <div class="footer-copyright text-center" style="margin-top: 0em;">
       © Shree Adhya Shakti Mataji Temple. All Rights Reserved. Registered Charity No. 1089024
     </div>
     <!-- Copyright -->
