@@ -2,32 +2,55 @@
   html, body {
     background-color: #e9b6bb;
     color: #636b6f;
-    font-family: 'Pacifico', cursive;
-    font-weight: 200;
-    height: 100vh;
+    font-family: 'Lobster', cursive;
+    /* font-weight: bold; */
     margin: 0;
+    /* letter-spacing: 0.1em; */
 }
 
 .carousel-img {
-    height: 350px;
+    height: 500px;
 }
 
-.carousel-inner {
-  position:relative;
-  width:50%;
-  overflow:hidden;
-}
-
-.carousel-inner::after {
-  display:block;
-  clear:both;
-  content:"";
-}
-
-.carousel-control-next {
-  right:50%;
-}
-
-.bg-dark {
+h2 {
   color: #721c24;
+  font-family: 'Roboto', cursive;
+  letter-spacing: normal !important;
+}
+
+p {
+  color: #721c24;
+  font-family: 'Roboto', cursive;
+  font-size: 14.5px;
+  font-weight: initial !important;
+  letter-spacing: normal !important;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 5px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-wordpress {
+  background: #55ACEE;
+  color: white;
 }
