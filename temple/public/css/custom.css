@@ -54,3 +54,18 @@ p {
   background: #55ACEE;
   color: white;
 }
+
+.bs-callout {
+    padding: 20px 20px 0px 20px;
+    margin: 20px 0px;
+    border-width: 1px 1px 1px 5px;
+    border-style: solid;
+    border-color: #7b0d0d;
+    border-image: none;
+    border-radius: 3px;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.176);
+}
+
+h1 {
+  color: #7b0d0d;
+}
