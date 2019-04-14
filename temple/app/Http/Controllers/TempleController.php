@@ -10,4 +10,9 @@ class TempleController extends Controller
     {
         return view('temple.index');
     }
+
+    public function aboutTemple()
+    {
+        return view('temple.aboutTemple');
+    }
 }
