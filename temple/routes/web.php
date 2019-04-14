@@ -15,4 +15,7 @@
 //     return view('welcome');
 // });
 
-Route::get('/temple', 'TempleController@index');
+Route::get('/', 'TempleController@index');
+Route::get('/home', ['as' => 'home', 'uses' => 'TempleController@index']);
+// Route::get('/aboutMataji', 'TempleController@aboutMataji');
+Route::get('/aboutTemple', ['as' => 'aboutTemple', 'uses' => 'TempleController@aboutTemple']);
