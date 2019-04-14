@@ -27,13 +27,13 @@
 
           <ul class="list-unstyled">
             <li>
-                <a href="aboutmataji.html">About Mataji</a>
+                <a href="{{route('aboutTemple')}}">About Temple</a>
             </li>
             <li>
-                <a href="aboutTemple.html">About Temple</a>
+                <a href="aboutTemple.html">Horoscope</a>
             </li>
             <li>
-                <a href="#!donation.html">Donations</a>
+                <a href="#donation.html">Donations</a>
             </li>
             <li>
                 <a href="contact.html">Contact us</a>
