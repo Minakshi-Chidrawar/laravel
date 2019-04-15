@@ -36,7 +36,7 @@
                     <a class="nav-link" href="gallery.html">Gallery</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="horoscope.html">Horoscope</a>
+                    <a class="nav-link" href="{{route('mission')}}">Mission</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="donation.html">Donations</a>
