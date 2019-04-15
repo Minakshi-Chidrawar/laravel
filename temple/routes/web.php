@@ -19,3 +19,4 @@ Route::get('/', 'TempleController@index');
 Route::get('/home', ['as' => 'home', 'uses' => 'TempleController@index']);
 // Route::get('/aboutMataji', 'TempleController@aboutMataji');
 Route::get('/aboutTemple', ['as' => 'aboutTemple', 'uses' => 'TempleController@aboutTemple']);
+Route::get('/mission', ['as' => 'mission', 'uses' => 'TempleController@mission']);
