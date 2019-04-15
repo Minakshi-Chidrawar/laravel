@@ -15,4 +15,9 @@ class TempleController extends Controller
     {
         return view('temple.aboutTemple');
     }
+
+    public function mission()
+    {
+        return view('temple.mission');
+    }
 }
