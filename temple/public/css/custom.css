@@ -70,12 +70,21 @@ h1 {
   color: #7b0d0d;
 }
 
-h4 {
+h5 {
   color: #721c24;
-  font-family: 'Roboto', cursive;
+  font-family: 'sans-serif', cursive;
   letter-spacing: normal !important;
 }
 
 .font-color {
   color: #721c24;
+  font-family: 'Roboto', cursive;
+  font-size: 14px;
+}
+
+.horoscope-img {
+  width: 341px; 
+  height: 200px; 
+  float: left; 
+  margin: 6px 6px 6px 0px;
 }
