@@ -30,7 +30,7 @@
                 <a href="{{route('aboutTemple')}}">About Temple</a>
             </li>
             <li>
-                <a href="aboutTemple.html">Horoscope</a>
+                <a href="{{route('horoscope')}}">Horoscope</a>
             </li>
             <li>
                 <a href="#donation.html">Donations</a>
