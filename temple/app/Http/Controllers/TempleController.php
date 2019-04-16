@@ -20,4 +20,9 @@ class TempleController extends Controller
     {
         return view('temple.mission');
     }
+
+    public function horoscope()
+    {
+        return view('temple.horoscope');
+    }
 }
