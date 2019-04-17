@@ -25,4 +25,9 @@ class TempleController extends Controller
     {
         return view('temple.horoscope');
     }
+
+    public function donation()
+    {
+        return view('temple.donation');
+    }
 }
