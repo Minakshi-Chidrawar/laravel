@@ -21,3 +21,4 @@ Route::get('/home', ['as' => 'home', 'uses' => 'TempleController@index']);
 Route::get('/aboutTemple', ['as' => 'aboutTemple', 'uses' => 'TempleController@aboutTemple']);
 Route::get('/mission', ['as' => 'mission', 'uses' => 'TempleController@mission']);
 Route::get('/horoscope', ['as' => 'horoscope', 'uses' => 'TempleController@horoscope']);
+Route::get('/donation', ['as' => 'donation', 'uses' => 'TempleController@donation']);
