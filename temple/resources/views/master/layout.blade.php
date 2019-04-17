@@ -2,7 +2,6 @@
 <html>
 <head>
     <title>Shree Adhya Shakti Mataji</title>
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
     <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -39,7 +38,7 @@
                     <a class="nav-link" href="{{route('mission')}}">Mission</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="donation.html">Donations</a>
+                    <a class="nav-link" href="{{route('donation')}}">Donations</a>
                 </li>
             </ul>
         </div>
