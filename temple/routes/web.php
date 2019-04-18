@@ -22,3 +22,4 @@ Route::get('/aboutTemple', ['as' => 'aboutTemple', 'uses' => 'TempleController@a
 Route::get('/mission', ['as' => 'mission', 'uses' => 'TempleController@mission']);
 Route::get('/horoscope', ['as' => 'horoscope', 'uses' => 'TempleController@horoscope']);
 Route::get('/donation', ['as' => 'donation', 'uses' => 'TempleController@donation']);
+Route::get('/priestServices', ['as' => 'priestServices', 'uses' => 'TempleController@priestServices']);
