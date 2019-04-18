@@ -95,3 +95,19 @@ h5 {
   font-weight: bold; 
   color: #7b0d0d;
 }
+
+div-table4 {
+  width: 45%;
+  margin-left: 25%;
+}
+
+btn-service {
+  box-shadow: 0 5px #7b0d0d;
+  background: #7b0d0d;
+  color: #ffffff;
+  border-radius: 14px;
+  padding: 0px 15px;
+  width: 10%;
+  height: 35px;
+  vertical-align: center;
+}

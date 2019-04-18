@@ -1,7 +1,7 @@
 @extends('master.layout')
 
 @section('content')
-    `<h1>Donation</h1>
+    <h1>Donation</h1>
     <div class="bs-callout">                            
         <p>
             There is a saying - <b>There is no better donation than feeding a soul.</b> You can help us by donating money and/or your volunteering service in temple, in office administration, collection of charitable donations and spreading the word about our mission.
