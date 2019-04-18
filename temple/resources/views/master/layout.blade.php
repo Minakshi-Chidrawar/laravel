@@ -26,7 +26,7 @@
                     <a class="nav-link" href="aarti.html">Aartis</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="PriestServices.html">Priest Services</a>
+                    <a class="nav-link" href="{{route('priestServices')}}">Priest Services</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="events.html">News & Events</a>
