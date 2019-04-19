@@ -35,4 +35,9 @@ class TempleController extends Controller
     {
         return view('temple.priestServices');
     }
+    
+    public function aarati()
+    {
+        return view('temple.aarati');
+    }
 }
