@@ -33,7 +33,7 @@
                 <a href="{{route('horoscope')}}">Horoscope</a>
             </li>
             <li>
-                <a href="#donation.html">Donations</a>
+                <a href="{{route('donation')}}">Donations</a>
             </li>
             <li>
                 <a href="contact.html">Contact us</a>
