@@ -62,7 +62,7 @@
                 Middlesex UB8 2DZ
             </li>
             <li>
-                <i class="fa fa-phone"></i> 078 8225 3540
+                078 8225 3540
             </li>
           </ul>
 
@@ -78,10 +78,17 @@
           <h5 class="font-weight-bold text-uppercase mb-4">Follow Us</h5>
 
           <!-- Facebook -->
-            <a href="https://www.facebook.com/adhyashakti.mataji" class="fa fa-facebook"></a>
+          <a href="https://www.facebook.com/adhyashakti.mataji">
+            <span class="fa fa-facebook fa-2x"></span>
+          </a>
           <!-- Twitter -->
-            <a href="https://twitter.com/Matajitempleuk" class="fa fa-twitter"></a>
-            <a href="https://adhyashaktimatajitemple.wordpress.com" class="fa fa-wordpress"></a>
+          <a href="https://twitter.com/Matajitempleuk">
+            <span class="fa fa-twitter fa-2x"></span>
+          </a>
+          <!-- Wordpress -->
+          <a href="https://adhyashaktimatajitemple.wordpress.com">
+            <span class="fa fa-wordpress fa-2x"></span>
+          </a>
         </div>
         <!-- Grid column -->
 
