@@ -40,4 +40,19 @@ class TempleController extends Controller
     {
         return view('temple.aarati');
     }
+
+    public function gayatriMantra()
+    {
+        return view('temple.gayatriMantra');
+    }
+
+    public function mataji()
+    {
+        return view('temple.mataji');
+    }
+
+    public function hanumanChalisa()
+    {
+        return view('temple.hanumanChalisa');
+    }
 }
