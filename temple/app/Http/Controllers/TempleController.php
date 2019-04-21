@@ -30,11 +30,6 @@ class TempleController extends Controller
     {
         return view('temple.donation');
     }
-
-    public function priestServices()
-    {
-        return view('temple.priestServices');
-    }
     
     public function aarati()
     {
@@ -54,5 +49,15 @@ class TempleController extends Controller
     public function hanumanChalisa()
     {
         return view('temple.hanumanChalisa');
+    }
+
+    public function inTempleActivities()
+    {
+        return view('temple.inTempleActivities');
+    }
+
+    public function outTempleActivities()
+    {
+        return view('temple.outTempleActivities');
     }
 }
