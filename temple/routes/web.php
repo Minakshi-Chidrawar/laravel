@@ -22,8 +22,9 @@ Route::get('/aboutTemple', ['as' => 'aboutTemple', 'uses' => 'TempleController@a
 Route::get('/mission', ['as' => 'mission', 'uses' => 'TempleController@mission']);
 Route::get('/horoscope', ['as' => 'horoscope', 'uses' => 'TempleController@horoscope']);
 Route::get('/donation', ['as' => 'donation', 'uses' => 'TempleController@donation']);
-Route::get('/priestServices', ['as' => 'priestServices', 'uses' => 'TempleController@priestServices']);
 Route::get('/aarati', ['as' => 'aarati', 'uses' => 'TempleController@aarati']);
 Route::get('/gayatriMantra', ['as' => 'gayatriMantra', 'uses' => 'TempleController@gayatriMantra']);
 Route::get('/mataji', ['as' => 'mataji', 'uses' => 'TempleController@mataji']);
 Route::get('/hanumanChalisa', ['as' => 'hanumanChalisa', 'uses' => 'TempleController@hanumanChalisa']);
+Route::get('/inTempleActivities', ['as' => 'inTempleActivities', 'uses' => 'TempleController@inTempleActivities']);
+Route::get('/outTempleActivities', ['as' => 'outTempleActivities', 'uses' => 'TempleController@outTempleActivities']);
