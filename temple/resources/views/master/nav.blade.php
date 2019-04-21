@@ -12,7 +12,7 @@
                 <a class="nav-link" href="{{route('aarati')}}">Aartis</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{route('priestServices')}}">Priest Services</a>
+                <a class="nav-link" href="{{route('inTempleActivities')}}">Priest Services</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="events.html">News & Events</a>
