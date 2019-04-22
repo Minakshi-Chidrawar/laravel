@@ -41,7 +41,7 @@ p {
 }
 
 .bs-callout {
-    padding: 20px 0px 0px 20px;
+    padding: 20px 10px 10px 20px;
     margin: 20px 0px;
     border-width: 1px 1px 1px 5px;
     border-style: solid;
@@ -116,4 +116,14 @@ btn-service {
   vertical-align: 0px;
   padding-bottom: 20px;
   font-weight: bolder;
+}
+
+.giftaid {
+  float: left;
+  margin-top: 0px;
+  margin-right: 8px;
+}
+
+.sign-off {
+  margin-top: 40px;  
 }
