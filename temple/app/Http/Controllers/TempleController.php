@@ -60,4 +60,14 @@ class TempleController extends Controller
     {
         return view('temple.outTempleActivities');
     }
+
+    public function easyFundRaising()
+    {
+        return view('temple.easyFundRaising');
+    }
+
+    public function templeExtension()
+    {
+        return view('temple.templeExtension');
+    }
 }
