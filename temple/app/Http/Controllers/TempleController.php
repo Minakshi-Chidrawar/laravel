@@ -70,4 +70,9 @@ class TempleController extends Controller
     {
         return view('temple.templeExtension');
     }
+
+    public function create()
+    {
+        return view('temple.contact');
+    }
 }
