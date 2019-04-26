@@ -36,7 +36,7 @@
                 <a href="{{route('donation')}}">Donations</a>
             </li>
             <li>
-                <a href="contact.html">Contact us</a>
+                <a href="{{route('contact')}}">Contact us</a>
             </li>
           </ul>
 
