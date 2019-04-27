@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Mail;
 use Illuminate\Http\Request;
 
 class TempleController extends Controller
@@ -74,5 +75,29 @@ class TempleController extends Controller
     public function create()
     {
         return view('temple.contact');
+    }
+
+    public function store(Request $request)
+    {
+        $request->validate([
+            'name' => 'required',
+            'email' => 'required|email',
+            'phone' => 'required',
+            'message' => 'required',
+        ]);
+        
+        //ContactUS::create($request->all()); 
+   
+        Mail::send('temple.contact-message',
+           array(
+               'name' => $request->get('name'),
+               'email' => $request->get('email'),
+               'message' => $request->get('message')
+           ), function($mail) use ($request)
+            {
+                //$mail->from('minakshichidrawar@gmail.com', 'Minakshi');
+                $mail->to($request->email)->subject('Hello');
+            });
+                return back()->with('success', 'Thanks for contacting us!'); 
     }
 }
