@@ -33,26 +33,39 @@
         </div>
     </div>
     <div class="bs-callout">
-        <form  id="contact_form" method="post" action="contact.php" novalidate="validate" >
+        <form method="post" action="{{ route('contact.store') }}">
+        {{ csrf_field() }}
         <div class="row">
             <div class="col-md-4 offset-md-1">
                 <div class="form-group">
-                    <label for="name">Name:</label> 
+                    <label class="form-control-label" for="name">Name:</label> 
                     <input name="name" type="text" class="form-control" placeholder="Name"/>
+                    @if ($errors->has('name'))
+                        <small class="inavlid-feedback">{{ $errors->first('name') }}</small>
+                    @endif
                 </div>
                 <div class="form-group">
                     <label for="telephone">Telephone:</label>
                     <input name="phone" type="text" class="form-control" placeholder="Phone"/>
+                    @if ($errors->has('phone'))
+                        <small class="inavlid-feedback">{{ $errors->first('phone') }}</small>
+                    @endif
                 </div>
                 <div class="form-group">
                     <label for="email">Email Address:</label>
                     <input name="email" type="text" class="form-control" placeholder="Email"/>
+                    @if ($errors->has('email'))
+                        <small class="inavlid-feedback">{{ $errors->first('email') }}</small>
+                    @endif
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="form-group">
                     <label for="comments">Message:</label>
                     <textarea name="message" cols="" rows="8" class="form-control" placeholder="Message"></textarea>
+                    @if ($errors->has('message'))
+                        <small class="inavlid-feedback">{{ $errors->first('message') }}</small>
+                    @endif
                 </div>
             </div>
         </div>
