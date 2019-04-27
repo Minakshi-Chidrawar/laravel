@@ -31,3 +31,4 @@ Route::get('/outTempleActivities', ['as' => 'outTempleActivities', 'uses' => 'Te
 Route::get('/easyFundRaising', ['as' => 'easyFundRaising', 'uses' => 'TempleController@easyFundRaising']);
 Route::get('/templeExtension', ['as' => 'templeExtension', 'uses' => 'TempleController@templeExtension']);
 Route::get('/contact', ['as' => 'contact', 'uses' => 'TempleController@create']);
+Route::post('/contact', ['as' => 'contact.store', 'uses' => 'TempleController@store']);
