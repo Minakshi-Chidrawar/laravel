@@ -131,3 +131,11 @@ btn-service {
 .inavlid-feedback {
   color: red;
 }
+
+.subPages {
+  padding: 20px 10px 10px 20px;
+  margin: 20px 0px;
+  border: 1px solid #7b0d0d;
+  border-radius: 0px 20px;
+  box-shadow: 10px 10px 6px rgba(0, 0, 0, 0.176);
+}
