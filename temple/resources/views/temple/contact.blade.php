@@ -35,6 +35,13 @@
     <div class="bs-callout">
         <form method="post" action="{{ route('contact.store') }}">
         {{ csrf_field() }}
+        
+        @if(Session::has('success'))
+            <div class="alert alert-success">
+                {{ Session::get('success') }}
+            </div>
+        @endif
+
         <div class="row">
             <div class="col-md-4 offset-md-1">
                 <div class="form-group">

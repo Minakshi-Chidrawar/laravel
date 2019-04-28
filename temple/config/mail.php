@@ -29,7 +29,7 @@ return [
     |
     */
 
-    'host' => env('MAIL_HOST', 'smtp.gmail.com'),
+    'host' => env('MAIL_HOST', 'smtp.mailtrap.io'),
 
     /*
     |--------------------------------------------------------------------------
@@ -42,7 +42,7 @@ return [
     |
     */
 
-    'port' => env('MAIL_PORT', 587),
+    'port' => env('MAIL_PORT', 2525),
 
     /*
     |--------------------------------------------------------------------------
@@ -55,10 +55,10 @@ return [
     |
     */
 
-    'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'minakshichidrawar@gmail.com'),
-        'name' => env('MAIL_FROM_NAME', 'Minakshi'),
-    ],
+    // 'from' => [
+    //     'address' => env('MAIL_FROM_ADDRESS', 'minakshichidrawar@gmail.com'),
+    //     'name' => env('MAIL_FROM_NAME', 'Minakshi'),
+    // ],
 
     /*
     |--------------------------------------------------------------------------
@@ -71,7 +71,7 @@ return [
     |
     */
 
-    'encryption' => env('MAIL_ENCRYPTION', 'tls'),
+    //'encryption' => env('MAIL_ENCRYPTION', 'tls'),
 
     /*
     |--------------------------------------------------------------------------
@@ -84,9 +84,9 @@ return [
     |
     */
 
-    'username' => env('minakshichidrawar@gmail.com'),
+    'username' => env('MAIL_USERNAME', '561f43cae5c45d'),
 
-    'password' => env('Mayank'),
+    'password' => env('MAIL_PASSWORD', 'fd0585a94995b3'),
 
     /*
     |--------------------------------------------------------------------------

@@ -95,9 +95,11 @@ class TempleController extends Controller
                'message' => $request->get('message')
            ), function($mail) use ($request)
             {
-                //$mail->from('minakshichidrawar@gmail.com', 'Minakshi');
-                $mail->to($request->email)->subject('Hello');
+                $mail->from($request->email, $request->name)->subject('Hello');
+
+                $mail->to('admin@example.com')->subject('Contact Message');
             });
-                return back()->with('success', 'Thanks for contacting us!'); 
+            
+        return back()->with('success', 'Thanks for contacting us!'); 
     }
 }
