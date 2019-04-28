@@ -10,11 +10,7 @@
         <!-- Grid column -->
         <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-0">
           <!-- Content -->
-          <h5 class="font-weight-bold text-uppercase mb-8">Timings: </h5>
-            <ul class="list-unstyled">
-              <li>Open daily 08:00-18:30 PM</li>
-              <li>Aarti daily at 12:00 noon and 18:00</li>
-            </ul>
+          <img src="{{ asset('images/MatajiMain.jpg') }}" width="100%" height="100%" alt="">
         </div>
         <!-- Grid column -->
 
@@ -76,19 +72,24 @@
 
           <!-- Social buttons -->
           <h5 class="font-weight-bold text-uppercase mb-4">Follow Us</h5>
-
-          <!-- Facebook -->
-          <a href="https://www.facebook.com/adhyashakti.mataji">
-            <span class="fa fa-facebook fa-2x"></span>
-          </a>
-          <!-- Twitter -->
-          <a href="https://twitter.com/Matajitempleuk">
-            <span class="fa fa-twitter fa-2x"></span>
-          </a>
-          <!-- Wordpress -->
-          <a href="https://adhyashaktimatajitemple.wordpress.com">
-            <span class="fa fa-wordpress fa-2x"></span>
-          </a>
+          <div class="row"> 
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/adhyashakti.mataji">
+              <span class="fa fa-facebook fa-2x"></span>
+            </a>
+            <!-- Twitter -->
+            <a href="https://twitter.com/Matajitempleuk">
+              <span class="fa fa-twitter fa-2x"></span>
+            </a>
+            <!-- Wordpress -->
+            <a href="https://adhyashaktimatajitemple.wordpress.com">
+              <span class="fa fa-wordpress fa-2x"></span>
+            </a>
+            <!-- Contact -->
+            <!-- <a href="https://adhyashaktimatajitemple.wordpress.com">
+              <span class="fa fa-envelope fa-1x"></span>
+            </a> -->
+          </div>
         </div>
         <!-- Grid column -->
 
