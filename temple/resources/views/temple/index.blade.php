@@ -44,7 +44,8 @@
         </p>
     </div>
   </div>
-  <hr class="clearfix w-100 d-md-none">
-
+  
+  <hr class="clearfix w-100">
   @include('partials.subPages')
+  <hr class="clearfix w-100">
 @endsection
