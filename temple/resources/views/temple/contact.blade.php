@@ -33,7 +33,7 @@
         </div>
     </div>
     <div class="bs-callout">
-        <form method="post" action="{{ route('contact.store') }}">
+        <form method="post" action="{{ route('contact.send') }}">
         {{ csrf_field() }}
         
         @if(Session::has('success'))
