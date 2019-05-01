@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Mail;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use App\Mail\ContactUs;
 
 class TempleController extends Controller
 {
@@ -86,7 +88,7 @@ class TempleController extends Controller
             'message' => 'required',
         ]);
         
-        //ContactUS::create($request->all()); 
+        ContactUS::create($request->all()); 
    
         Mail::send('temple.contact-message',
            array(
@@ -95,11 +97,21 @@ class TempleController extends Controller
                'message' => $request->get('message')
            ), function($mail) use ($request)
             {
-                $mail->from($request->email, $request->name)->subject('Hello');
+                //$mail->from($request->email, $request->name)->subject('Hello');
 
-                $mail->to('admin@example.com')->subject('Contact Message');
+                $mail->to('minakshichidrawar@gmail.com')->subject('Contact Message');
             });
-            
-        return back()->with('success', 'Thanks for contacting us!'); 
+            return back()->with('success', 'Thanks for contacting us!'); 
+    }
+
+    public function send()
+    {
+        $objDemo = new \stdClass();
+        $objDemo->demo_one = 'Demo One Value';
+        $objDemo->demo_two = 'Demo Two Value';
+        $objDemo->sender = 'SenderUserName';
+        $objDemo->receiver = 'ReceiverUserName';
+ 
+        Mail::to("minakshichidrawar@gmail.com")->send(new ContactUs($objDemo));
     }
 }
