@@ -17,7 +17,6 @@
 
 Route::get('/', 'TempleController@index');
 Route::get('/home', ['as' => 'home', 'uses' => 'TempleController@index']);
-// Route::get('/aboutMataji', 'TempleController@aboutMataji');
 Route::get('/aboutTemple', ['as' => 'aboutTemple', 'uses' => 'TempleController@aboutTemple']);
 Route::get('/mission', ['as' => 'mission', 'uses' => 'TempleController@mission']);
 Route::get('/horoscope', ['as' => 'horoscope', 'uses' => 'TempleController@horoscope']);
@@ -32,4 +31,3 @@ Route::get('/easyFundRaising', ['as' => 'easyFundRaising', 'uses' => 'TempleCont
 Route::get('/templeExtension', ['as' => 'templeExtension', 'uses' => 'TempleController@templeExtension']);
 Route::get('/contact', ['as' => 'contact', 'uses' => 'TempleController@create']);
 Route::post('/contact', ['as' => 'contact.store', 'uses' => 'TempleController@store']);
-Route::post('/contact', ['as' => 'contact.send', 'uses' => 'TempleController@send']);
