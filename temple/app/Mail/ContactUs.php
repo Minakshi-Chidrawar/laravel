@@ -14,18 +14,18 @@ class ContactUs extends Mailable
     /**
      * The demo object instance.
      *
-     * @var Demo
+     * @var Mail
      */
-    public $demo;
+    public $mail;
  
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct($demo)
+    public function __construct($mail)
     {
-        $this->demo = $demo;
+        $this->mail = $mail;
     }
  
     /**
@@ -35,13 +35,7 @@ class ContactUs extends Mailable
      */
     public function build()
     {
-        return $this->from('minakshichidrawar@gmail.com')
-        ->view('mails.demo')
-        ->text('mails.demo_plain')
-        ->with(
-            [
-                'testVarOne' => '1',
-                'testVarTwo' => '2',
-            ]);
+        return $this->from($this->mail->email)
+        ->view('mails.contactUs');
     }
 }
