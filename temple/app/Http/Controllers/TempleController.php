@@ -80,38 +80,16 @@ class TempleController extends Controller
     }
 
     public function store(Request $request)
-    {
+    { 
         $request->validate([
             'name' => 'required',
             'email' => 'required|email',
             'phone' => 'required',
             'message' => 'required',
         ]);
-        
-        ContactUS::create($request->all()); 
-   
-        Mail::send('temple.contact-message',
-           array(
-               'name' => $request->get('name'),
-               'email' => $request->get('email'),
-               'message' => $request->get('message')
-           ), function($mail) use ($request)
-            {
-                //$mail->from($request->email, $request->name)->subject('Hello');
 
-                $mail->to('minakshichidrawar@gmail.com')->subject('Contact Message');
-            });
-            return back()->with('success', 'Thanks for contacting us!'); 
-    }
+        Mail::to("minakshichidrawar@gmail.com")->send(new ContactUs($request));
 
-    public function send()
-    {
-        $objDemo = new \stdClass();
-        $objDemo->demo_one = 'Demo One Value';
-        $objDemo->demo_two = 'Demo Two Value';
-        $objDemo->sender = 'SenderUserName';
-        $objDemo->receiver = 'ReceiverUserName';
- 
-        Mail::to("minakshichidrawar@gmail.com")->send(new ContactUs($objDemo));
+        return back()->with('success', 'Thanks for contacting us!');
     }
 }
