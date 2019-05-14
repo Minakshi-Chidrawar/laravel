@@ -33,3 +33,7 @@ Route::get('/templeExtension', ['as' => 'templeExtension', 'uses' => 'TempleCont
 Route::get('/contact', ['as' => 'contact', 'uses' => 'TempleController@create']);
 Route::post('/contact', ['as' => 'contact.store', 'uses' => 'TempleController@store']);
 Route::post('/contact', ['as' => 'contact.send', 'uses' => 'TempleController@send']);
+
+Route::get('/image-view','ImageController@index');
+Route::post('/image-view','ImageController@store');
+Route::get('viewImage','ImageController@create');
