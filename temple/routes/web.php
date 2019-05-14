@@ -17,7 +17,6 @@
 
 Route::get('/', 'TempleController@index');
 Route::get('/home', ['as' => 'home', 'uses' => 'TempleController@index']);
-// Route::get('/aboutMataji', 'TempleController@aboutMataji');
 Route::get('/aboutTemple', ['as' => 'aboutTemple', 'uses' => 'TempleController@aboutTemple']);
 Route::get('/mission', ['as' => 'mission', 'uses' => 'TempleController@mission']);
 Route::get('/horoscope', ['as' => 'horoscope', 'uses' => 'TempleController@horoscope']);
@@ -31,9 +30,13 @@ Route::get('/outTempleActivities', ['as' => 'outTempleActivities', 'uses' => 'Te
 Route::get('/easyFundRaising', ['as' => 'easyFundRaising', 'uses' => 'TempleController@easyFundRaising']);
 Route::get('/templeExtension', ['as' => 'templeExtension', 'uses' => 'TempleController@templeExtension']);
 Route::get('/contact', ['as' => 'contact', 'uses' => 'TempleController@create']);
+<<<<<<< HEAD
 Route::post('/contact', ['as' => 'contact.store', 'uses' => 'TempleController@store']);
 Route::post('/contact', ['as' => 'contact.send', 'uses' => 'TempleController@send']);
 
 Route::get('/image-view','ImageController@index');
 Route::post('/image-view','ImageController@store');
 Route::get('viewImage','ImageController@create');
+=======
+Route::post('/contact', ['as' => 'contact.store', 'uses' => 'TempleController@store']);
+>>>>>>> b19c4bf692664c6819309886e29eef76c7ce5711
